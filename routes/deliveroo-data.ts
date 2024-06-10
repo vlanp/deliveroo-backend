@@ -13,7 +13,7 @@ const fetchData = async () => {
 
   try {
     const response = await axios.get(url, config);
-    return response.data.items;
+    return response.data;
   } catch (error: unknown) {
     throw {
       status: (error as Error).status || 404,

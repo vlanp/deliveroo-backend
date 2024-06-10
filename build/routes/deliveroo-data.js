@@ -57,7 +57,7 @@ var fetchData = function () { return __awaiter(void 0, void 0, void 0, function 
                 return [4 /*yield*/, axios_1.default.get(url, config)];
             case 2:
                 response = _a.sent();
-                return [2 /*return*/, response.data.items];
+                return [2 /*return*/, response.data];
             case 3:
                 error_1 = _a.sent();
                 throw {
